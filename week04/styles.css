@@ -22,9 +22,6 @@ header {
     display: flexbox;
 }
 
-main{
-    margin: 20px;
-}
 nav ul {
     list-style: none;
     display: flex;
