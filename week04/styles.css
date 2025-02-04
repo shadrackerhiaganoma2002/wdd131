@@ -23,11 +23,7 @@ header {
 }
 
 main{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
-    gap: 50px;
-    padding: 20px;
-}
+    margin: 20px;
 
 nav ul {
     list-style: none;
