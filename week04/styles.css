@@ -1,0 +1,299 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    
+}
+
+header {
+    background: #2c3e50;
+    color: #ecf0f1;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    text-align: center;
+    display: flexbox;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    gap: 50px;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    list-style: none;
+    margin-top: 1rem;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: color 0.3s;
+    
+}
+
+nav ul li a:hover {
+    color: #2ecc71;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    width: 80%;
+    height: auto;
+    animation: fadeIn 1s;
+}
+
+.featured-exhibits, .exhibit-list, .exhibit-card {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.exhibit-card {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+    transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+.exhibit-card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+}
+
+.founder {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.founder img {
+    max-width: 30%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    animation: fadeIn 1s;
+}
+
+.mission{
+    font-size: 1rem;
+    box-shadow: #020202;
+    margin-bottom: 10px;
+    padding: 100px;
+}
+.mission h2{
+    font-size: 1.5rem;
+    color: #7c4747;
+    margin-bottom: 10px;
+    border-radius: 10%;
+    padiding: 10px;
+}
+
+h3{
+    font-size: 1.5rem;
+    color: #020202;
+    margin-bottom: 10px;
+    border-radius: 10%;
+    padiding: 10px;
+}
+.Team{
+    background: white;
+    border: 1px solid #ccc;
+    padding: 100px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .Team:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .Team img {
+    max-width: 40%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .Team h2 {
+    font-size: 1.5rem;
+    color: #4CAF50;
+    margin-bottom: 10px;
+  }
+  
+    .Team p {
+        font-size: 1rem;
+        color: #555;
+        line-height: 1.6;
+    }
+ 
+
+    .history{
+        background: white;
+        border: 1px solid #ccc;
+        padding: 100px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      
+      .history:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+      }
+      
+      .history img {
+        max-width: 40%;
+        border-radius: 8px;
+        margin-bottom: 10px;
+      }
+      
+      .history h2 {
+        font-size: 1.5rem;
+        color: #4CAF50;
+        margin-bottom: 10px;
+      }
+      
+        .history p {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.6;
+        }
+     
+        .contact {
+            background: white;
+            border: 1px solid #ccc;
+            padding: 100px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+          }
+          
+          .contact:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+          }
+          
+          .contact img {
+            max-width: 40%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+          }
+          
+          .contact h2 {
+            font-size: 1.5rem;
+            color: #4CAF50;
+            margin-bottom: 10px;
+          }
+          
+            .contact p {
+                font-size: 1rem;
+                color: #555;
+                line-height: 1.6;
+            }
+         
+            .contact form {
+                display: flex;
+                flex-direction: column;
+                width: 90%;
+                max-width: 400px;
+                margin: 0 auto;
+            }
+            
+            .contact label {
+                margin: 10px 0 5
+    }
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #2c3e50;
+    color: #ecf0f1;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background: #2ecc71;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #27ae60;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block; 
+        margin: 5px 0;
+    }
+
+    .exhibit-card {
+        width: 90%; 
+        margin-bottom: 20px;
+    }
+
+    .hero img {
+        width: 100%;
+    }
+}
