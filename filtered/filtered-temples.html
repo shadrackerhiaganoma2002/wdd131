@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <link rel="stylesheet" href="style/filtered-temple.css">
+    <script defer src="script/filtered-temples.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        
+    <div id="temple-container"></div>
+    <nav>
+        <button onclick="filterTemples('old')">Old Temples</button>
+        <button onclick="filterTemples('new')">New Temples</button>
+        <button onclick="filterTemples('large')">Large Temples</button>
+        <button onclick="filterTemples('small')">Small Temples</button>
+        <button onclick="filterTemples('filtered-temples.html')">Home</button>
+    </nav>
+    
+    </header>
+    <main>
+        <h2>Current Selection: Home</h2>
+        <section class="gallery">
+            <figure>
+                <figcaption>Temple 1</figcaption>
+                <img src="images/aba-nigeria-808x480-050816_jrn012.jpg" alt="Description of Temple 1">
+            </figure>
+            <figure>
+                <figcaption>Temple 2</figcaption>
+                <img src="images/abidjan-ivory-coast-temple-1108-main.jpg" alt="Description of Temple 2">
+            </figure>
+            <figure>
+                <figcaption>Temple 3</figcaption>
+                <img src="images/Accraduskthumb-1024x576.jpg" alt="Description of Temple 3">
+            </figure>
+            <figure>
+                <figcaption>Temple 4</figcaption>
+                <img src="images/640px-Los_Angeles_Temple_1.jpg" alt="Description of Temple 4">
+            </figure>
+            <figure>
+                <figcaption>Temple 5</figcaption>
+                <img src="images/029-Manila-Philippines-Temple.jpg" alt="Description of Temple 5">
+            </figure>
+            <figure>
+                <figcaption>Temple 6</figcaption>
+                <img src="images/133-Cebu-City-Philippines-Temple.jpg" alt="Description of Temple 6">
+            </figure>
+            <figure>
+                <figcaption>Temple 7</figcaption>
+                <img src="images/most-beautiful-mormon-temples-u2.jpeg" alt="Description of Temple 7">
+            </figure>
+            <figure>
+                <figcaption>Temple 8</figcaption>
+                <img src="images/red-cliffs-utah-temple-44958-main.jpg" alt="Description of Temple 8">
+            </figure>
+            <figure>
+                <figcaption>Temple 9</figcaption>
+                <img src="images/redlands-california-temple-37504-main.jpg" alt="Description of Temple 9">
+            </figure>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Shadrack Ekavana Erhiaganoma, Nigeria,Delta State.</p>
+    <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
