@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Shadrack Review Form</title>
+</head>
+
+<body>
+    <header>
+        <h1>Review Form</h1>
+    </header>
+
+    <main>
+        <form action="review.html" method="get" id="reviewForm">
+            <div class="form-group">
+                <label for="productName"> Name:</label>
+                <select id="productName" name="productName" required>
+                    <option value="" disabled selected> Name you'd Prefer to call me..</option>
+                    <!-- Options will be populated by JavaScript -->
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Overall Rating:</label>
+                <div class="rating">
+                    <!-- Radio buttons for rating -->
+                    <label>
+                        <input type="radio" id="rating1" name="rating" value="1" required> ☆
+                    </label>
+                    <label>
+                        <input type="radio" id="rating2" name="rating" value="2" required> ☆☆
+                    </label>
+                    <label>
+                        <input type="radio" id="rating3" name="rating" value="3" required> ☆☆☆
+                    </label>
+                    <label>
+                        <input type="radio" id="rating4" name="rating" value="4" required> ☆☆☆☆
+                    </label>
+                    <label>
+                        <input type="radio" id="rating5" name="rating" value="5" required> ☆☆☆☆☆
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="installationDate">Date of Installation:</label>
+                <input type="date" id="installationDate" name="installationDate" required>
+            </div>
+
+            <div class="form-group">
+                <label>Useful Features:</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" id="feature1" name="usefulFeatures" value="Feature 1"> Feature 1</label>
+                    <label><input type="checkbox" id="feature2" name="usefulFeatures" value="Feature 2"> Feature 2</label>
+                    <label><input type="checkbox" id="feature3" name="usefulFeatures" value="Feature 3"> Feature 3</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="writtenReview">Written Review:</label>
+                <textarea id="writtenReview" name="writtenReview" rows="4" cols="30"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="userName">Your Name:</label>
+                <input type="text" id="userName" name="userName">
+            </div>
+
+            <input type="submit" value="Submit Review">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; Shadrack Erhiaganoma Ekavana 2025. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
