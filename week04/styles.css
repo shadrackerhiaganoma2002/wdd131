@@ -8,6 +8,8 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
+    margin: 0;
+    padding: 1rem;
     
 }
 
@@ -59,8 +61,8 @@ nav ul li a:hover {
 }
 
 .featured-exhibits, .exhibit-list, .exhibit-card {
-    margin: 20px auto;
-    text-align: center;
+   position: relative;
+   text-align: center;
 }
 
 .featured-exhibits h2, .exhibit-list h2 {
@@ -72,16 +74,15 @@ nav ul li a:hover {
 }
 
 .exhibit img {
-    min-width: 100%;
-    border-radius: 8px;
+    width: 20%;
     margin-bottom: 10px;
     animation: fadeIn 1s;
 }
 
 .exhibit-card {
     border: 1px solid #ccc;
-    margin: 10px;
-    padding: 10px;
+    margin: 5px;
+    padding: 3px;
     display: inline-block;
     transition: transform 0.3s, box-shadow 0.3s; 
 }
@@ -131,7 +132,7 @@ h3{
 .Team{
     background: white;
     border: 1px solid #ccc;
-    padding: 100px;
+    padding: 10px;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
